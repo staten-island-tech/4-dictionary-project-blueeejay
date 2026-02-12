@@ -6,7 +6,7 @@ The user will select one item to purchase. You will then show the user
 ONLY the name of the item they purchased. You will need to use the item
 index to accomplish this task. """
 item = {
-    "weapon name" = "laer blade",
-    "price" = 33.99,
-    "weapon type" = "sword"
+    "weapon name" :["laer blade" "dawnbringer", "w.m.'s talons"],
+    "price" : [33.33, 199.99, 67.67],
+    "weapon type" : ["sword", "hammer","gauntlet"]
 }
