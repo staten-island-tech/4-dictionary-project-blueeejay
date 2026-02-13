@@ -5,8 +5,26 @@ PART ONE:
 The user will select one item to purchase. You will then show the user
 ONLY the name of the item they purchased. You will need to use the item
 index to accomplish this task. """
-item = {
-    "weapon name" :["laer blade" "dawnbringer", "w.m.'s talons"],
-    "price" : [33.33, 199.99, 67.67],
-    "weapon type" : ["sword", "hammer","gauntlet"]
-}
+
+""" legions = [
+     { "name":"dark angels", "alliegence" : "loyal", "primarch": "lion"},
+     {"name": "emperor's children", "alliegence": "traitor", "primarch": "fulgrim"},
+     { "name": "iron warriors", "alliegence": "traitor", "primarch" : " perturabo"},
+     {"name" : "salamanders","alliegence" : "loyal", "primarch" : "vulkan",}, 
+     { "name":"white scars", "alliegence" : "loyal", "primarch": "jaghatai"},
+     { "name":"space wolves", "alliegence" : "loyal", "primarch": "russ"},
+     { "name":"imperial fists", "alliegence" : "loyal", "primarch": "dorn"},
+     { "name":"night lords", "alliegence" : "traitor", "primarch": "curze"},
+     { "name":"blood angels", "alliegence" : "loyal", "primarch": "sanguinius"},
+     { "name":"iron hands", "alliegence" : "loyal", "primarch": "ferrus"}, 
+
+]
+# print(legions[0]["name"])
+#angr, guil, mort, mag, hor, lorg, corv, alphi """
+# i wrote forgetting we had to make  a store :(  
+store = [
+    {"name": "dawnbringer", "weapon type": "hammer", "cost": 199.99},
+    {"name": "oathbreaker", "weapon type": "hammer", "cost": 104.00},
+    {"w.m.'s claws": }
+     
+]
