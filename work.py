@@ -21,10 +21,46 @@ index to accomplish this task. """
 ]
 # print(legions[0]["name"])
 #angr, guil, mort, mag, hor, lorg, corv, alphi """
-# i wrote forgetting we had to make  a store :(  
+# i wrote all pf that forgetting we had to make  a store :(  
 store = [
-    {"name": "dawnbringer", "weapon type": "hammer", "cost": 199.99},
-    {"name": "oathbreaker", "weapon type": "hammer", "cost": 104.00},
-    {"w.m.'s claws": }
-     
+    {"name": "Dawnbringer", "weapon type": "hammer", "cost": 199.99},
+    {"name": "Oathbreaker", "weapon type": "hammer", "cost": 104.00},
+    {"name": "W.M.'s Talons", "weapon type": "gauntlet", "cost":67.99}, 
+    {"name": "Blade Encarmine", "weapon type": "sword", "cost":540.50}, 
+    {"name": "Fireblade", "weapon type": "sword", "cost":429.00}, 
+    {"name": "Anathame", "weapon type": "EVIL blade", "cost": 753.34}, 
+    {"name": "Silence", "weapon type": "scythe", "cost":333.00}, 
+    {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585.00}, 
+    {"name": "whetstone", "weapon type": "tool", "cost":19.00}, 
+    {"name": "the Blade of Laer", "weapon type": "EVIL sword", "cost":96.00},  
 ]
+# chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+# ACTIVITY 1 
+""" def shop():
+    print("Welcome! Here is what is in stock today..")
+    for index, item in enumerate(store):
+            print(index, ":", item["name"])
+    chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+    print("You are purchasing a/the", store[chosen]["name"])
+
+shop() """
+
+#ACTIVITY 2 
+cart = [] 
+def shop():
+    print("Welcome! Here is what is in stock today..")
+    for index, item in enumerate(store):
+            print(index, ":", item["name"])
+    chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+    cart.append(chosen)
+    print("You are purchasing", store[chosen]["name"])
+    if input("Would you like to continue shopping?:") == "yes":
+            for index, item in enumerate(store):
+                print(index, ":", item["name"])
+        chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+          
+
+
+
+
+shop()
