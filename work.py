@@ -54,6 +54,7 @@ def shop():
     chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
     cart.append(chosen)
     print("You are purchasing", store[chosen]["name"])
+    print ("Your cart currently contains" (cart))
     if input("Would you like to continue shopping?:") == "yes":
             for index, item in enumerate(store):
                 print(index, ":", item["name"])
