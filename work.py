@@ -25,13 +25,13 @@ index to accomplish this task. """
 store = [
     {"name": "Dawnbringer", "weapon type": "hammer", "cost": 199.99},
     {"name": "Oathbreaker", "weapon type": "hammer", "cost": 104.00},
-    {"name": "W.M.'s Talons", "weapon type": "gauntlet", "cost":67.99}, 
-    {"name": "Blade Encarmine", "weapon type": "sword", "cost":540.50}, 
+    {"name": "the W.M.'s Talons", "weapon type": "gauntlet", "cost":67.99}, 
+    {"name": "the Blade Encarmine", "weapon type": "sword", "cost":540.50}, 
     {"name": "Fireblade", "weapon type": "sword", "cost":429.00}, 
-    {"name": "Anathame", "weapon type": "EVIL blade", "cost": 753.34}, 
+    {"name": "the Anathame", "weapon type": "EVIL blade", "cost": 753.34}, 
     {"name": "Silence", "weapon type": "scythe", "cost":333.00}, 
     {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585.00}, 
-    {"name": "whetstone", "weapon type": "tool", "cost":19.00}, 
+    {"name": "a whetstone", "weapon type": "tool", "cost":19.00}, 
     {"name": "the Blade of Laer", "weapon type": "EVIL sword", "cost":96.00},  
 ]
 # chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
@@ -47,19 +47,25 @@ shop() """
 
 #ACTIVITY 2 
 cart = [] 
+item = len(store)
 def shop():
-    print("Welcome! Here is what is in stock today..")
-    for index, item in enumerate(store):
+        ct = []
+        cs = 0
+        print("Welcome! Here is what is in stock today..")
+        for index, item in enumerate(store):
             print(index, ":", item["name"])
-    chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
-    cart.append(chosen)
-    print("You are purchasing", store[chosen]["name"])
-    print ("Your cart currently contains" (cart))
-    if input("Would you like to continue shopping?:") == "yes":
+        chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+        cart.append(chosen)
+        ct.append(store[chosen]["cost"])
+        print("You are purchasing", store[chosen]["name"], "for", store[chosen]["cost"],"TG.")
+        while input("Would you like to continue shopping?:") == "yes":
             for index, item in enumerate(store):
                 print(index, ":", item["name"])
-        chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
-          
+                chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
+        print("Your cart contains.." )
+        for index, item in enumerate(cart):
+            print(index, ":", item["name"])
+        
 
 
 
