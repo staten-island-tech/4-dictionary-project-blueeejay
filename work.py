@@ -70,4 +70,4 @@ def shop():
         
 
 shop()
-print(cart)
+print("Thank you for shopping with us! You are purchasing", cart["name"])
