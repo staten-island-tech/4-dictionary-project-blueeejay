@@ -58,12 +58,13 @@ def shop():
         cart.append(chosen)
         ct.append(store[chosen]["cost"])
         print("You are purchasing", store[chosen]["name"], "for", store[chosen]["cost"],"TG.")
+        cs + float([chosen]["cost"])
         while input("Would you like to continue shopping?:") == "yes":
         #     for index, item in enumerate(store):
         #         print(index, ":", item["name"])
                 chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
                 cart.append(chosen)
-                ct.append(store[chosen]["cost"])
+                cs + float([chosen]["cost"])
         # print("Your cart contains.." )
         # for index, item in enumerate(cart):
         #     print(index, ":", item["name"])
