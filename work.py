@@ -23,16 +23,16 @@ index to accomplish this task. """
 #angr, guil, mort, mag, hor, lorg, corv, alphi """
 # i wrote all pf that forgetting we had to make  a store :(  
 store = [
-    {"name": "Dawnbringer", "weapon type": "hammer", "cost": 199.99},
-    {"name": "Oathbreaker", "weapon type": "hammer", "cost": 104.00},
-    {"name": "the W.M.'s Talons", "weapon type": "gauntlet", "cost":67.99}, 
-    {"name": "the Blade Encarmine", "weapon type": "sword", "cost":540.50}, 
-    {"name": "Fireblade", "weapon type": "sword", "cost":429.00}, 
-    {"name": "the Anathame", "weapon type": "EVIL blade", "cost": 753.34}, 
-    {"name": "Silence", "weapon type": "scythe", "cost":333.00}, 
-    {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585.00}, 
-    {"name": "a whetstone", "weapon type": "tool", "cost":19.00}, 
-    {"name": "the Blade of Laer", "weapon type": "EVIL sword", "cost":96.00},  
+    {"name": "Dawnbringer", "weapon type": "hammer", "cost": 19999},
+    {"name": "Oathbreaker", "weapon type": "hammer", "cost": 10400},
+    {"name": "the W.M.'s Talons", "weapon type": "gauntlet", "cost":6799}, 
+    {"name": "the Blade Encarmine", "weapon type": "sword", "cost":54050}, 
+    {"name": "Fireblade", "weapon type": "sword", "cost":42900}, 
+    {"name": "the Anathame", "weapon type": "EVIL blade", "cost": 75334}, 
+    {"name": "Silence", "weapon type": "scythe", "cost":33300}, 
+    {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585}, 
+    {"name": "a whetstone", "weapon type": "tool", "cost":1900}, 
+    {"name": "the Blade of Laer", "weapon type": "EVIL sword", "cost":9600},  
 ]
 # chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
 # ACTIVITY 1 
@@ -50,7 +50,7 @@ cart = []
 iii = int(len(store))
 def shop():
         ct = []
-        cs = 0
+        cs = 0.0
         print("Welcome! Here is what is in stock today..")
         for index, item in enumerate(store):
             print(index, ":", item["name"])
@@ -58,17 +58,16 @@ def shop():
         cart.append(chosen)
         ct.append(store[chosen]["cost"])
         print("You are purchasing", store[chosen]["name"], "for", store[chosen]["cost"],"TG.")
-        cs + float([chosen]["cost"])
         while input("Would you like to continue shopping?:") == "yes":
         #     for index, item in enumerate(store):
         #         print(index, ":", item["name"])
                 chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
                 cart.append(chosen)
-                cs + float([chosen]["cost"])
+                ct.append(int(store[chosen]["cost"]))
         # print("Your cart contains.." )
         # for index, item in enumerate(cart):
         #     print(index, ":", item["name"])
+        print("Thank you for shopping with us! You are purchasing",cart, "for a total of", sum(cs),"." )
         
 
 shop()
-print("Thank you for shopping with us! You are purchasing", cart["name"])
