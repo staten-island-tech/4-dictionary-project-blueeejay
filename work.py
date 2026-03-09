@@ -32,7 +32,7 @@ store = [
     {"name": "Silence", "weapon type": "scythe", "cost":33300}, 
     {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585}, 
     {"name": "a whetstone", "weapon type": "tool", "cost":1900}, 
-    {"name": "the Blade of Laer", "weapon type": "EVIL sword", "cost":9600},  
+    {"name": "the Blade of the Laer", "weapon type": "EVIL sword", "cost":9600},  
 ]
 # chosen = int(input("Input the number corresponding to the item would you like to purchase:"))
 # ACTIVITY 1 
