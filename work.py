@@ -47,7 +47,6 @@ shop() """
 
 #ACTIVITY 2 
 cart = [] 
-iii = int(len(store))
 def shop():
         ct = []
         cs = 0.0
@@ -68,7 +67,6 @@ def shop():
         # print("Your cart contains.." )
         # for index, item in enumerate(cart):
         #     print(index, ":", item["name"])
-        print("Thank you for shopping with us! You are purchasing items corresponding with numbers/number #", cart, "for a total of", sum(ct),"." )
-        print(iii)
+        print("Thank you for shopping with us! You are purchasing items corresponding with numbers/number ", cart, "for a total of", sum(ct),"." )
 
 shop()
