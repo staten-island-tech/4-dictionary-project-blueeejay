@@ -40,9 +40,9 @@ def LANG(sent):
  t = 0
  for i in sent: #checks each character
       if i.lower == "s" : # if i == "s" or i == "S"
-        s+=1
+        s== s + 1 
       elif i.lower == "t" : # USE ELIF. PREVENT BUGS 
-        t+=1
+        t == t + 1 
  if s>= t: 
     print("French")
  else:
