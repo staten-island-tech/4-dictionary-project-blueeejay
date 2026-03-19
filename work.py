@@ -24,7 +24,7 @@ index to accomplish this task. """
 # i wrote all pf that forgetting we had to make  a store :(  
 store = [
     {"name": "Dawnbringer", "weapon type": "hammer", "cost": 19999},
-    {"name": "Oathbreaker", "weapon type": "hammer", "cost": 10400},
+    {"name": "Forgebreaker", "weapon type": "hammer", "cost": 10400},
     {"name": "the W.M.'s Talons", "weapon type": "gauntlet", "cost":6799}, 
     {"name": "the Blade Encarmine", "weapon type": "sword", "cost":54050}, 
     {"name": "Fireblade", "weapon type": "sword", "cost":42900}, 
