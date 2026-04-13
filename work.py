@@ -30,7 +30,7 @@ store = [
     {"name": "Fireblade", "weapon type": "sword", "cost":42900}, 
     {"name": "the Anathame", "weapon type": "EVIL blade", "cost": 75334}, 
     {"name": "Silence", "weapon type": "scythe", "cost":33300}, 
-    {"name": "Storm's Voice", "weapon type": "ranged", "cost": 585}, 
+    {"name": "Storm's Voice", "weapon type": "ranged", "cost": 58500}, 
     {"name": "a whetstone", "weapon type": "tool", "cost":1900}, 
     {"name": "the Blade of the Laer", "weapon type": "EVIL sword", "cost":9600},  
 ]
