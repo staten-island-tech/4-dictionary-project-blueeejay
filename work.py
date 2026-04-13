@@ -68,5 +68,4 @@ def shop():
         # for index, item in enumerate(cart):
         #     print(index, ":", item["name"])
         print("Thank you for shopping with us! You are purchasing items corresponding with numbers/number", cart, "for a total of", sum(ct),"." )
-
 shop()
